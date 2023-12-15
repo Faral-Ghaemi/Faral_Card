@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- لینک CSS در صورت نیاز -->
+</head>
+<body>
+    <div id="timer">00:00:00</div>
+    <button id="startButton">ورود</button>
+    <button id="endButton" style="display: none;">خروج</button>
+
+    <!-- پاپ‌آپ گزارش -->
+    <div id="reportPopup" style="display: none;">
+        <textarea id="reportText"></textarea>
+        <button id="submitReport">ارسال گزارش</button>
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
